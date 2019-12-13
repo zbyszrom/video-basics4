@@ -5,21 +5,13 @@ import Nav from './nav'
 import Footer from './footer'
 
 
-
-
-
-
 const Layout = ({ children }) => {
   
-
   return (
     <>
-      
-      
          <Nav /> 
         <main>{children}</main>
-        <Footer />
-      
+        <Footer />      
     </>
   )
 }
