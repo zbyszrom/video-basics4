@@ -7,6 +7,7 @@ const Nav = () => {
 
     <nav>
 <Link to='/' activeStyle={{ color: "#f06666" }}>Początek</Link>
+<Link to='/video' activeStyle={{ color: "#f06666" }}>Filmy</Link>
         <Link to='/contact' activeStyle={{ color: "#f06666" }}>Kontakt</Link>      
         
     </nav>
