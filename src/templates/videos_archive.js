@@ -17,15 +17,15 @@ const VideosArchive = (props) => {
             
             
         
-        <div >
+        <div className = 'cards'>
             {videoContent.edges.map(edge => (
-                <div key={edge.node.id} >
+                <div key={edge.node.id} className = 'card' >
                 <br/>
                 <h3 >{edge.node.title}</h3>
                 <img src={edge.node.featuredImage.fluid.src} alt=""
             onClick={() => navigate(`/video/${edge.node.slug}`)}/>
             
-            <p  onClick={() => navigate(`/text/${edge.node.lyric.slug}`)} >
+            <p className = 'link'  onClick={() => navigate(`/text/${edge.node.lyric.slug}`)} >
                 {edge.node.lyric.artists} - {edge.node.lyric.title}</p>
 
             </div>          

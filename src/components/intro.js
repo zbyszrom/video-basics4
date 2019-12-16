@@ -1,10 +1,16 @@
 import React from 'react'
-
+import styled from 'styled-components'
 
 const Intro = () => {
+
+   const Text = styled.div`
+    max-width: 60rem;
+    padding: 0 10%;
+    margin-top: 2.5rem;`
+
     
     return(
-    <>
+    <Text>
     
     <h1 >O moich filmach</h1>
     <h2>oraz innych pracach</h2>
@@ -15,7 +21,7 @@ const Intro = () => {
             Witam serdecznie wszystkich odwiedzających moją stronę. </p>        
                        
     </div>
-   </>
+   </Text>
     
 )
     }
