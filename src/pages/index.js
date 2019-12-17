@@ -10,6 +10,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Intro/>
     <Featured/> 
+    <div className = 'hero-foot' />
   </Layout>
 )
 

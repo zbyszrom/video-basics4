@@ -48,7 +48,8 @@ const VideosArchive = (props) => {
                     </Link>
                 )}
             </div>
-        </div>     
+        </div> 
+        <div className = 'hero-foot' />    
         </Layout>
     )
 
