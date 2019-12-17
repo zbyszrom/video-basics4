@@ -48,44 +48,41 @@ a {
  // FORM ------------------------
 
 label {
-  font-family: Muli,sans-serif;
   font-size: .9rem;
   line-height: 1.5rem;
   font-weight: 700;
   transition: all 0.3s ease 0s;
 };
-input {
-  height: 2.5rem;
-width: 100%;
-outline: none;
-border: none;
-background-color: transparent;
-border-bottom: 1px solid rgba(255,255,255,0.5);
-transition: all 0.3s ease 0s;
-font-size: .9rem;
-line-height: 1.5rem;
-font-weight: 300;
-&_hidden {
-  display: none
-}
-&:focus{
-  border-bottom: 1px solid #F06666;   
-}
-}
 
-textarea {
+%fields {
   width: 100%;
   outline: none;
   border: none;
   background-color: transparent;
   border-bottom: 1px solid rgba(255,255,255,0.5);
-  transition: all 0.3s ease 0s;  
+  transition: all 0.3s ease 0s;
   line-height: 1.5rem;
-  font-weight: 300;  
+  font-weight: 300;
   &:focus{
-      border-bottom: 1px solid #F06666;   
-  }
+    border-bottom: 1px solid #F06666;   
+    }
 }
+
+input {
+  @extend %fields;
+
+  height: 2.5rem;
+  font-size: .9rem;
+  &_hidden {
+    display: none
+  }
+  
+}
+
+textarea {
+  @extend %fields;
+}
+
 button {
   width: 7.75rem;
   height: 2.4rem;
