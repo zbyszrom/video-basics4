@@ -4,6 +4,8 @@ import PropTypes from "prop-types"
 import Nav from './nav'
 import Footer from './footer' 
 import '../styles/layout.scss'
+import '../styles/backgrounds.scss'
+import '../styles/pagination.scss'
 
 
 

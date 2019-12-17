@@ -14,8 +14,7 @@ const VideoTemplate = (props) => {
     const Content = styled.div`
     max-width: 80rem;
     margin: 3.5rem auto;
-    padding: 0 5%;
-        `
+    padding: 0 5%;`
 
 
     const Iframe = styled.div`
