@@ -33,18 +33,18 @@ const VideosArchive = (props) => {
             
             ))}
         </div>
-        <div >
-            <div >
+        <div className = 'pagination'>
+            <div className = 'item'>
                 {!isFirst && (
                     <Link to={prevPage} rel='prev'>
-                        <div ></div>
+                        <div className = 'back'></div>
                     </Link>
                 )}
             </div>
-            <div >
+            <div className = 'item'>
                 {!isLast && (
                     <Link to={nextPage} rel='next'>
-                        <div ></div>
+                        <div className = 'next'></div>
                     </Link>
                 )}
             </div>

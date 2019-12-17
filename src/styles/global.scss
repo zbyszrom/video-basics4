@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
   }
+  // BASIC SELECTORS -----------------------
 body {
     font-family: Muli,sans-serif;
     line-height: 1.6; 
@@ -41,15 +42,75 @@ a {
     line-height: 1.1rem;
     text-decoration: none;
     font-weight: 600;
-    color: white;
+    color: white;   
 }
+
+ // FORM ------------------------
+
+label {
+  font-family: Muli,sans-serif;
+  font-size: .9rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  transition: all 0.3s ease 0s;
+};
+input {
+  height: 2.5rem;
+width: 100%;
+outline: none;
+border: none;
+background-color: transparent;
+border-bottom: 1px solid rgba(255,255,255,0.5);
+transition: all 0.3s ease 0s;
+font-size: .9rem;
+line-height: 1.5rem;
+font-weight: 300;
+&_hidden {
+  display: none
+}
+&:focus{
+  border-bottom: 1px solid #F06666;   
+}
+}
+
+textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  transition: all 0.3s ease 0s;  
+  line-height: 1.5rem;
+  font-weight: 300;  
+  &:focus{
+      border-bottom: 1px solid #F06666;   
+  }
+}
+button {
+  width: 7.75rem;
+  height: 2.4rem;
+  border-radius: 5px;
+  background-color: #f06666;
+  color: #fff;
+  border: none;
+  font-family: Muli,sans-serif;
+  font-size: .9rem;
+  font-weight: 300;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  &:hover {
+      filter: brightness(90%)
+    }
+}
+// FOOTER -------------------------------
+
 footer {
  display: flex;
  align-items: center; 
  justify-content: center;   
 }
 
-
+// Utilities --------------------------
 
 .link {
     font-size: .9rem;
@@ -91,8 +152,9 @@ footer {
   position: absolute; 
   top: 0; 
   left: 0;
-
 }
+
+// MEDIA QUERIES -------------------------
 
 @media screen and (max-width: 500px) {
     body {
