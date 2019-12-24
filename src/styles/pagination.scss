@@ -9,6 +9,7 @@
     align-self: center;
     margin: 0 1.9rem;
 }
+
 %arrow {
     height: .9rem; width: .9rem;
     border: 1px solid #fff;
@@ -33,9 +34,7 @@
 .next {
     @extend %arrow;
     transform: rotate(45deg);
-    &:hover {
-        
-        transform: rotate(45deg);
-        
+    &:hover {     
+        transform: rotate(45deg);    
     }
 }

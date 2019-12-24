@@ -70,13 +70,11 @@ label {
 
 input {
   @extend %fields;
-
   height: 2.5rem;
   font-size: .9rem;
   &_hidden {
     display: none
   }
-  
 }
 
 textarea {
