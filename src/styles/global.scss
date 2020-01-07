@@ -10,6 +10,8 @@ body {
     line-height: 1.6; 
     background-color: #000;
     color: #fff;
+    margin: 0 auto;
+    padding: 0 10%;
     max-width: 1280px;
 }
 h1, h2, h3, h4 {  
@@ -63,6 +65,7 @@ label {
   transition: all 0.3s ease 0s;
   line-height: 1.5rem;
   font-weight: 300;
+  color: #fff;
   &:focus{
     border-bottom: 1px solid #F06666;   
     }
