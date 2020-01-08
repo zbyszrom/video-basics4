@@ -42,7 +42,8 @@ render={data => (
         
         <img src={edge.node.featuredImage.fluid.src} alt=""
         onClick={() => navigate(`/video/${edge.node.slug}`)} />
-        <p className = 'link'  onClick={() => navigate(`/category/${edge.node.category.slug}`)} >{edge.node.category.category}</p>
+        {/* <p className = 'link'  onClick={() => navigate(`/category/${edge.node.category.slug}`)} >{edge.node.category.category}</p> */}
+        
         
 
         </div>
