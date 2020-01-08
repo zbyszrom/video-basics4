@@ -25,7 +25,9 @@ const VideosArchive = (props) => {
                 <img src={edge.node.featuredImage.fluid.src} alt=""
             onClick={() => navigate(`/video/${edge.node.slug}`)}/>
             
-            <p className = 'link'  onClick={() => navigate(`/text/${edge.node.lyric.slug}`)} >
+            {/*<p className = 'link'  onClick={() => navigate(`/text/${edge.node.lyric.slug}`)} >*/}
+            <p className = 'link' >
+                
                 {edge.node.lyric.artists} - {edge.node.lyric.title}</p>
 
             </div>          
